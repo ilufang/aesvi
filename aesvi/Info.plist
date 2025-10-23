@@ -5,6 +5,8 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconSystemGenerated</key>
+			<true/>
 			<key>CFBundleTypeName</key>
 			<string>Encrypted Text</string>
 			<key>CFBundleTypeRole</key>
@@ -19,14 +21,12 @@
 			<string>EncryptedText</string>
 		</dict>
 	</array>
-	<key>UTImportedTypeDeclarations</key>
+	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
-			<key>CFBundleIdentifier</key>
-			<string></string>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>public.content</string>
+				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Encrypted Text</string>

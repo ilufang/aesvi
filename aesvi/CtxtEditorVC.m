@@ -40,7 +40,6 @@
 	[fontmgr setAction:@selector(setGlobalFont:)];
 	NSFont *font = [NSFont fontWithName:font_face size:font_size];
 	if (font) {
-		NSLog(@"Font: %@ %f", font.fontName, font.pointSize);
 		[fontmgr setSelectedFont:font isMultiple:NO];
 		_editor.font = font;
 	} else {
@@ -58,7 +57,6 @@
 	[super setRepresentedObject:representedObject];
 
 	// Update the view, if already loaded.
-	NSLog(@"VC: Load");
 	[self updateDoc:representedObject];
 }
 
@@ -67,7 +65,6 @@
 	NSUserDefaults *prefs = NSUserDefaults.standardUserDefaults;
 	[prefs setValue:font.fontName forKey:@"font_face"];
 	[prefs setFloat:font.pointSize forKey:@"font_size"];
-	NSLog(@"Set font: %@ %f", font.fontName, font.pointSize);
 	
 	_editor.font = font;
 }
